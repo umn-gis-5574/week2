@@ -26,7 +26,15 @@
     <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
   ```
   + `<style>` element is a way to use CSS within your HTML, rather than storing it in a CSS file. It's really just a matter of convenience. In general it's a good idea to keep your CSS, HTML, and JS in separate files (if only because it opens up lots of text editor features)
-  + `<script>` elements allow you to incorporate JavaScript into your web page. Either directly `<script>alert("Where in the world is Carmen San Diego?");</script` or by supplying a URL via a `src` attribute (kinda like `<link>`s using the `href` attribute) `<script src="//cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>`.
+  + `<script>` elements allow you to incorporate JavaScript into your web page. Either directly:
+  ```html
+  <script>alert("Where in the world is Carmen San Diego?");</script>
+  ```
+   or by supplying a URL via a `src` attribute (kinda like `<link>`s using the `href` attribute) 
+
+   ```html
+   <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+   ```
 
 3. The main attraction of any HTML page is the `<body>`. This is where the actual content of your page goes. You might have a thousand lines of JavaScript  There's [waaaay too much](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to cover in this space, but just know that when making web maps at some point you'll need to create a container of some sort (usually a `<div>` element).
 
