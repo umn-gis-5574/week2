@@ -228,12 +228,22 @@ Using what we learned today, create a webpage with the following elements.
     + meta tag for charset
     + meta tag for viewport
     + Link tag pointing to leaflet.css
+      + `<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />`   
     + Link tag for `style.css`, a file you create where you'll write your CSS code (save the file in the same folder as `assignment.html`)
+      + `<link rel="stylesheet" href="style.css" />`  
   - body tag
     + div tag with `id` set to `map-container`
     + div tag with `class` set to `red box`
-    + Script tags linking to leaflet and jquery.
+    + Script tags linking to leaflet and jquery.  
+      ```
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+       ```
+     
     + Script tag pointing to `script.js`, a file you create where you'll write your JS (save the file in the same folder as `assignment.html`)
+      ```
+      <script src="script.js"></script>
+      ```
 
 2. A CSS file called `style.css`
   - a rule for the id `map-container` that sets the `height` to `400px;` and the `width` to `500px;`
@@ -245,8 +255,15 @@ Using what we learned today, create a webpage with the following elements.
   - set the initial view to 44.971724, -93.243239 and zoom level 16 (`L.setView`)
   - add a basemap using the url `http://{s}.tile.osm.org/{z}/{x}/{y}.png` (`L.tileLayer`)
   - request GeoJSON from the url `https://dl.dropboxusercontent.com/u/8550761/wilson-library.geojson` using JQuery's [$.getJSON](http://api.jquery.com/jquery.getjson/) function
-    + add a GeoJSON based layer to the map using the requested GeoJSON
+  - add a GeoJSON based layer to the map using the requested GeoJSON  
+```javascript
+$.getJSON(<url for geojson>, function(data){
+    var geojson = new L.geoJson(data) //don't forget the word new in front of L.geoJson!
+        .addTo(map);
+});
+```
   - Use JQuery to select the div with `class` set to `red box`
+    + Use the selector `.red.box` 
     + Add a click handler (`$(<your selector>).click(function(e){<doing something>})`) that does something in response to a user clicking on the div
 
 #### "Extra Credit"
