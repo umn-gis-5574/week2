@@ -3,12 +3,9 @@
     width:500px;
 }
 
-.red{
+.red-box{
     background-color: tomato;
     border:3px double red;
-}
-
-.box{
     height: 200px;
     width: 200px;
 }
