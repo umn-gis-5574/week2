@@ -12,7 +12,8 @@
   ```html
   <!DOCTYPE html>
   ```
-    Any self-respecting `.html` file will begin with a declaration to the world what sort of document it is. While there exists a [wide variety](https://en.wikipedia.org/wiki/Document_type_declaration) of doctypes, the **only one** you need to concern yourself with is just plain old `html`. With the advent of HTML5 (the 5th version of the specification for the markup language HTML), it's not really worth too much of your time thinking about the DOCTYPE. As wikipedia neatly puts it: 'The DOCTYPE is retained in HTML5 as a "mostly useless, but required" header'
+  
+Any self-respecting `.html` file will begin with a declaration to the world what sort of document it is. While there exists a [wide variety](https://en.wikipedia.org/wiki/Document_type_declaration) of doctypes, the **only one** you need to concern yourself with is just plain old `html`. With the advent of HTML5 (the 5th version of the specification for the markup language HTML), it's not really worth too much of your time thinking about the DOCTYPE. As wikipedia neatly puts it: 'The DOCTYPE is retained in HTML5 as a "mostly useless, but required" header'
 
 2. Following the DOCTYPE, you encounter the `<head>` of your document. Basically, the head element contains metadata about your web page, such as:
   + `<title>`, which is what you see in the browser tab and search results.
@@ -36,7 +37,7 @@
    <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
    ```
 
-3. The main attraction of any HTML page is the `<body>`. This is where the actual content of your page goes. You might have a thousand lines of JavaScript  There's [waaaay too much](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to cover in this space, but just know that when making web maps at some point you'll need to create a container of some sort (usually a `<div>` element).
+3. The main attraction of any HTML page is the `<body>`. This is where the actual content of your page goes. There's [waaaay too much](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to cover in this space, but just know that when making web maps at some point you'll need to create a container of some sort (usually a `<div>` element).
 
 
 ### CSS classes, ids, selectors
@@ -49,7 +50,7 @@ For map stuff, you mainly want to get proficient with identifying relevant secti
 And the following CSS **rules** (think of each pair of { } and the stuff inside it as rules governing the selection that precedes it):
 
 ```css
-h1.cowboy-greeting{
+h1.cowboy-greeting {
   color: red;
 }
 
@@ -107,16 +108,16 @@ console.log("3: " + fruit);
 JQuery is a swiss army knife for working with JavaScript. An example:
 
 ```javascript
-#plain old javascript
+//plain old javascript
 var ele = document.getElementById("someElement");
 ele.style["background-color"] = "red";
 
-#JQuery
+//JQuery
 $("#someElement").css("background-color", "red");
 
-#these both do the same, but JQuery is a lot more space friendly. The real 
-#power comes in with more complicated selections. The $("") clause lets select 
-#elements in the DOM using CSS selectors.
+//these both do the same, but JQuery is a lot more space friendly. The real 
+//power comes in with more complicated selections. The $("") clause lets select 
+//elements in the DOM using CSS selectors.
 ```
 
 ##### loops
