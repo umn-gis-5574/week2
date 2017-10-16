@@ -203,7 +203,7 @@ Read more about GeoJSON [here](http://geojson.org/) and [here](http://www.macwri
 JQuery allows you to request and use data from a remote server in your map. For example, there's some GeoJSON living at this URL.
 
 ```
-https://dl.dropboxusercontent.com/u/8550761/wilson-library.geojson
+https://gist.githubusercontent.com/anonymous/3321fa92df1395fc0167c82eecfa4763/raw/c96e8c0721c55e0889c32d6bfe246a08eca2840a/map.geojson
 ```
 
 Let's go to http://umn-gis-5574.github.io/week2/2.html and play around.
